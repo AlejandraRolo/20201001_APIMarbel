@@ -22,7 +22,7 @@ const obtenerDataAll = (urlBase, recurso) => {
     // recuperar url completa de API para obtener personajes
     const api= construirUrlApiPersonaje(urlBase, recurso);
     return fetch(api)
-        // obtener listado de pokemones y mapear la respuesta en formato Json
+        // obtener listado de superheroes y mapear la respuesta en formato Json
         .then((response) => response.json())
         .then((json) => {
             llenarDatos(json);
